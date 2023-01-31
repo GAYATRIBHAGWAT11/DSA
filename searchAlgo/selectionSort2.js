@@ -1,12 +1,12 @@
-// time complexity=> O(n^2)
+let items=[20,12,53,3,56,78,0,5,89,34]
+// console.log(data.sort((a,b)=>a-b));
 
-let items = [10, 12, 53, 3]
 
 function selectionSort(data) {
     // console.log(items);
-    for (let i = 0; i <= data.length-1; i++) {
+    for (let i = data.length-1; i>=0; i--) {
         let minVal = i
-        for (let j = i + 1; j <= data.length-1; j++) {
+        for (let j = i - 1; j>=0; j--) {
             if (data[j] < data[minVal]) {
                 minVal = j
             }
